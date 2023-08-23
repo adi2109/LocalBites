@@ -1,15 +1,16 @@
 const express = require('express')
-const User = require('../models/User')
+//With this line of code we are acquiring models that we have created from user.js and order.js file , This will help in our interaction with database.
+const User = require('../models/User') //By adding .. to the path we returned to backend(Come out of current folder) from where we can navigate 
 const Order = require('../models/Orders')
 const router = express.Router()
+//With this line of code we are specifically acquiring body and validationResult from all the things express-validator has to offer.
 const { body, validationResult } = require('express-validator');
 const bcrypt = require('bcryptjs')
 var jwt = require('jsonwebtoken');
 const axios = require('axios')
 const fetch = require('../middleware/fetchdetails');
 const jwtSecret = "HaHa"
-// var foodItems= require('../index').foodData;
-// require("../index")
+
 //Creating a user and storing data to MongoDB Atlas, No Login Requiered
 router.post('/createuser', [
     body('email').isEmail(),
@@ -130,6 +131,7 @@ router.post('/getlocation', async (req, res) => {
 
     }
 })
+
 router.post('/foodData', async (req, res) => {
     try {
         // console.log( JSON.stringify(global.foodData))

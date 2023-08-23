@@ -1,5 +1,8 @@
+/*Middleware is the code(on the server) which runs between getting a request and sending a response*/
+/*This middleware is responsible for authentication using JSON Web Tokens (JWT)*/
 var jwt = require('jsonwebtoken');
 const jwtSecret = "HaHa"
+
 const fetch = (req,res,next)=>{
     // get the user from the jwt token and add id to req object
     const token = req.header('auth-token');

@@ -1,9 +1,10 @@
 import './App.css';
-import '../node_modules/bootstrap-dark-5/dist/css/bootstrap-dark.min.css'  //npm i bootstrap-dark-5 boostrap
+import '../node_modules/bootstrap-dark-5/dist/css/bootstrap-dark.min.css'  
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 
 import Home from './screens/Home';
+//These components are used for handling routing and navigation in the application
 import {
   BrowserRouter as Router,
   Routes,
@@ -15,7 +16,7 @@ import Signup from './screens/Signup';
 import { CartProvider } from './components/ContextReducer';
 import MyOrder from './screens/MyOrder';
 
-
+//Nesting of component in root directory
 function App() {
   return (
     <CartProvider>
@@ -32,5 +33,5 @@ function App() {
     </CartProvider>
   );
 }
-
+//We are exporting this app and it will be rendered in index.js 
 export default App;

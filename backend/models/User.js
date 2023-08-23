@@ -1,3 +1,4 @@
+//This file is a schema of users detail while signing in.
 const mongoose = require('mongoose')
 
 const { Schema } = mongoose;
