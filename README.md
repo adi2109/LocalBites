@@ -58,7 +58,8 @@ Here's a glimpse of the user interface of the LocalBites application:
 6. Start the backend: `nodemon app.js` (inside the backend directory)
 7. Access the application at: `http://localhost:3000`
 
-
+### Demo
+Link: [Click Here](https://drive.google.com/drive/folders/1TiZ1Hx3sRFTi1BodmQgPh4-V8ZmxuuDz?usp=drive_link)
 ---
 
 Enjoy browsing and ordering delicious food with LocalBites! 🍔🍕🥗.
